@@ -13,12 +13,12 @@
 /*Dividers*/
     --light-grayish-blue: hsl(240, 5%, 91%);
 }
-
+/*
 *{
     margin: 0;
     padding: 0;
     
-}
+}*/
 
 
 body{
@@ -31,15 +31,32 @@ body{
 }
 
 .card{
-
+    background-color: white;
+    border-radius: 2rem;
+    max-width: 56rem;
 }
 
-.card__image{
 
+
+.card__image{
+    width: 100%;
+    height: auto;
+    max-width: 25rem;
 }
 
 .card__text{
     
+}
+
+@media (min-width: 56em){
+    .card{
+        display:flex;
+    }
+
+    .card__image,
+    .card__text{
+    flex:1;
+}
 }
 
 
